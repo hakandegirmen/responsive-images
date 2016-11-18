@@ -1,0 +1,75 @@
+/* -- MOBILE FIRST VIEW - DEFAULT STYLE-- */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: calc(100% - 2rem);
+    margin: 1rem 0 0 1rem;
+}
+
+.container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container ul li{
+    padding: 0 0 1rem 0;
+}
+
+.container ul li img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container ul li:lastchild {
+    margin-left: 1rem;
+
+}
+
+@media screen and (min-width: 600px) {
+    /* --  RULES FOR VIEWS LARGER THAN 600px  -- */
+    .container {
+        max-width: calc(100% - 1rem);
+    }
+    
+    .container ul li {
+        width: calc(50% - 1rem);
+        float: left;
+    }
+    
+    .container ul li:nth-child(2n) {
+        margin-left: 1rem;
+        
+    }
+    
+}
+
+/* -- RULES FOR VIEWS LARGER THAN 1200px --*/
+@media screen and (min-width: 1200px) {
+    .container ul li {
+        width: calc(25% - 1rem);
+        float: left;
+        margin: 0 1rem 0 0;
+    }
+    
+    .container ul li:nth-child(2n) {
+        margin-left: 0rem;
+        
+    }
+}
+/*
+
+Pictures by;
+
+Markus Spiske - https://500px.com/markusspiske
+
+Yinan Chen - https://500px.com/webmaster85
+
+Fahim Akhter - https://500px.com/fahimakhter 
+
+*/
